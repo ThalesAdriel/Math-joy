@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Joy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Voltar</a>
+            <a href="#">Como jogar</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <button id="math_button" onclick="math()">INICIAR</button>
+            <h1>Questão:</h1>
+            <div id="Questão">
+            </div>
+            <div id="score">
+                <div id="score-text"></div>
+                <div id="score-number"></div>
+            </div>
+        </section>
+        <div id="Resposta">
+            <button id="pergunta_1" class="button_reposta" onclick="check(document.querySelector('#pergunta_1').innerText)">0</button>
+            <button id="pergunta_2" class="button_reposta" onclick="check(document.querySelector('#pergunta_2').innerText)">0</button>
+            <button id="pergunta_3" class="button_reposta" onclick="check(document.querySelector('#pergunta_3').innerText)">0</button>
+            <button id="pergunta_4" class="button_reposta" onclick="check(document.querySelector('#pergunta_4').innerText)">0</button>
+            <button id="pergunta_5" class="button_reposta" onclick="check(document.querySelector('#pergunta_5').innerText)">0</button>
+            <button id="pergunta_6" class="button_reposta" onclick="check(document.querySelector('#pergunta_6').innerText)">0</button>
+        </div>
+    </main>
+    <footer>
+        <p>Math Joy</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
